@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://sara.harka.com/favicon.png" />
+    <title>Screensaver</title>
+    <style>
+      body {
+        background-color: #111;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        animation: wall 6.28s linear 0s infinite alternate;
+      }
+      img {
+        position: absolute;
+        border-radius: 50%;
+        animation: ball 2.06s ease-in 0s infinite alternate;
+      }
+      @keyframes wall {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(calc(100vw - 75px));
+        }
+      }
+      @keyframes ball {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(calc(100vh - 75px));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://sara.harka.com/img/sara-harka.jpg"
+      alt="Beautiful Sara Harka in a bouncy ball."
+      width="75"
+      height="75"
+    />
+  </body>
+</html>
